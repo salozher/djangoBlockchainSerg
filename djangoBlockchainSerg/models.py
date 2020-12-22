@@ -1,3 +1,9 @@
+# S.Melchakov
+# Blockchain (final assignment)
+# December 2020
+# https://github.com/salozher/djangoBlockchainSerg
+
+
 from __future__ import unicode_literals
 from django.contrib.auth.models import User, BaseUserManager, AbstractBaseUser
 from django.db import models

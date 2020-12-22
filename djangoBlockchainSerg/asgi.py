@@ -1,11 +1,8 @@
-"""
-ASGI config for djangoBlockchainSerg project.
+# S.Melchakov
+# Blockchain (final assignment)
+# December 2020
+# https://github.com/salozher/djangoBlockchainSerg
 
-It exposes the ASGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/
-"""
 
 import os
 

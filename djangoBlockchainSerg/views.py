@@ -1,3 +1,10 @@
+# S.Melchakov
+# Blockchain (final assignment)
+# December 2020
+# https://github.com/salozher/djangoBlockchainSerg
+
+
+
 from django.http import JsonResponse
 import json
 from django.http import StreamingHttpResponse
@@ -569,7 +576,7 @@ resolve_conflicts()
 
 try:
     if Block.objects.all().count() < 1:
-        new_block(100, '2ab')
+        new_block(100, 'genesis_block_of_serg_chain')
 except Exception as e10:
     print(str(e10))
 

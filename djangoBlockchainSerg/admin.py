@@ -1,3 +1,10 @@
+# S.Melchakov
+# Blockchain (final assignment)
+# December 2020
+# https://github.com/salozher/djangoBlockchainSerg
+
+
+
 from django import forms
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
