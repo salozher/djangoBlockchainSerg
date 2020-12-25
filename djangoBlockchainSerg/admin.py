@@ -11,7 +11,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.contrib.auth.models import Group
 
-from .models import MyUser, TransactionsBuffer, Chain, Node, Block
+from .models import MyUser, TransactionsBuffer, Node, Block
 
 
 class UserCreationForm(forms.ModelForm):
@@ -85,6 +85,5 @@ class UserAdmin(BaseUserAdmin):
 
 admin.site.register(MyUser, UserAdmin)
 admin.site.register(TransactionsBuffer)
-admin.site.register(Chain)
 admin.site.register(Block)
 admin.site.register(Node)

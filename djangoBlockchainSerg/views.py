@@ -12,7 +12,7 @@ import hashlib
 import requests
 from datetime import datetime
 from urllib.parse import urlparse
-from .models import Node, Chain, TransactionsBuffer, Block, Picture
+from .models import Node, TransactionsBuffer, Block, Picture
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.decorators import api_view
@@ -28,8 +28,7 @@ print('node_identifier = ' + node_identifier)
 
 def home_view(request):
     context = {
-        # 'contests': contests,
-        # 'games': games,
+
     }
     return render(request, 'home.html', context)
 

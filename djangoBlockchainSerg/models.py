@@ -71,16 +71,6 @@ class Block(models.Model):
         super(Block, self).delete(*args, **kwargs)
 
 
-class Chain(models.Model):
-    block = models.TextField(verbose_name='block', )
-
-    def __str__(self):
-        return self.block
-
-    def delete(self, *args, **kwargs):
-        super(Chain, self).delete(*args, **kwargs)
-
-
 class TransactionsBuffer(models.Model):
     unique_id = models.CharField(verbose_name='unique_id', max_length=100, unique=True, )
     sender = models.CharField(verbose_name='sender', max_length=100, )
@@ -104,6 +94,7 @@ class Node(models.Model):
         super(Node, self).delete(*args, **kwargs)
 
 
+# a class that i plan to use for my next (SD4) project
 class Picture(models.Model):
     image = models.BinaryField(blank=True)
 
